@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, Code } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 const navLinks = [
   { href: '#timeline', label: 'Timeline' },
@@ -18,7 +19,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-lg">
       <div className="container flex h-14 items-center">
-        <Link href="/" className="group mr-auto flex items-center gap-2 font-bold font-headline uppercase tracking-wider">
+        <Link href="/" className="group flex items-center gap-2 font-bold font-headline uppercase tracking-wider mr-auto">
           <Code className="h-6 w-6 text-primary transition-transform duration-300 group-hover:scale-125" />
           <span className="">Anas Masama</span>
         </Link>
@@ -41,29 +42,32 @@ export function Header() {
             aria-label="Toggle menu"
             className="relative h-8 w-8"
           >
-            <Menu className={`h-6 w-6 transition-all duration-300 ${isMenuOpen ? 'rotate-90 scale-0 opacity-0' : 'rotate-0 scale-100 opacity-100'}`} />
-            <X className={`absolute h-6 w-6 transition-all duration-300 ${isMenuOpen ? 'rotate-0 scale-100 opacity-100' : '-rotate-90 scale-0 opacity-0'}`} />
+            <Menu className={cn("h-6 w-6 transition-all duration-300", isMenuOpen ? 'rotate-90 scale-0 opacity-0' : 'rotate-0 scale-100 opacity-100')} />
+            <X className={cn("absolute h-6 w-6 transition-all duration-300", isMenuOpen ? 'rotate-0 scale-100 opacity-100' : '-rotate-90 scale-0 opacity-0')} />
           </Button>
         </div>
       </div>
-      {isMenuOpen && (
-        <div className="md:hidden">
-          <div className="container pb-4">
-            <nav className="grid gap-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="py-2 text-lg font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-          </div>
+      <div
+        className={cn(
+          "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
+          isMenuOpen ? "max-h-screen" : "max-h-0"
+        )}
+      >
+        <div className="container pb-4">
+          <nav className="grid gap-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="py-2 text-lg font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
         </div>
-      )}
+      </div>
     </header>
   );
 }
