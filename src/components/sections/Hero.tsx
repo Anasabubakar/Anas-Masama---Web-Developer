@@ -5,7 +5,7 @@ import { ArrowDown } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section id="hero" className="relative w-full flex items-center justify-center min-h-[calc(100vh-3rem)] py-20 bg-background">
+    <section id="hero" className="relative w-full flex items-center justify-center min-h-[calc(100vh-3rem)] py-12 bg-background">
         <div className="absolute inset-0 z-0 opacity-20">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,255,255,0.3),rgba(255,255,255,0))]"></div>
         </div>
@@ -21,7 +21,7 @@ export function Hero() {
             <IntroGenerator />
           </div>
         </div>
-        <div className="mt-24 flex justify-center gap-4">
+        <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg">
               <Link href="#projects">View My Work</Link>
             </Button>
@@ -31,7 +31,7 @@ export function Hero() {
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
             <Link href="#timeline" aria-label="Scroll to next section" className="group">
-                <ArrowDown className="h-8 w-8 text-primary/50 transition-transform duration-500 group-hover:animate-bounce-slow" />
+                <ArrowDown className="h-8 w-8 text-primary/50 transition-transform duration-300 group-hover:animate-bounce-slow" />
             </Link>
         </div>
       </div>
