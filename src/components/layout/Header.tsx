@@ -17,7 +17,11 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-lg">
-      <div className="container flex h-14 items-center">
+      <div className="container flex h-12 items-center">
+        <Link href="/" className="group mr-auto flex items-center gap-2 font-bold font-headline uppercase tracking-wider">
+          <Code className="h-6 w-6 text-primary transition-transform duration-300 group-hover:scale-125" />
+          <span className="">Anas Masama</span>
+        </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           {navLinks.map((link) => (
             <Link
@@ -29,14 +33,8 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="ml-auto">
-          <Link href="/" className="group flex items-center gap-2 font-bold font-headline uppercase tracking-wider">
-            <Code className="h-6 w-6 text-primary transition-transform duration-300 group-hover:scale-125" />
-            <span className="">Anas Masama</span>
-          </Link>
-        </div>
         <div className="flex flex-1 items-center justify-end gap-2 md:hidden">
-          <Button
+           <Button
             variant="ghost"
             size="icon"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
