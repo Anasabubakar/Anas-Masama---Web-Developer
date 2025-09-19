@@ -3,13 +3,13 @@ import { Briefcase, GraduationCap, Star } from 'lucide-react';
 const timelineData = [
   {
     icon: <GraduationCap />,
-    date: '2018',
+    date: 'June 2020',
     title: 'Started at Vision Programming Tech',
     description: 'Began my journey into computer science, laying the foundational knowledge for my future career.',
   },
   {
     icon: <Star />,
-    date: '2020',
+    date: '2021',
     title: 'First Web Project',
     description: 'Developed my first full-stack web application, sparking a deep passion for web development.',
   },
