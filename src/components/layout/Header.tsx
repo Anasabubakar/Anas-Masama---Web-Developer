@@ -39,8 +39,10 @@ export function Header() {
             size="icon"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
+            className="relative h-8 w-8"
           >
-            {isMenuOpen ? <X className="h-6 w-6 transition-transform duration-300 rotate-0 scale-100" /> : <Menu className="h-6 w-6 transition-transform duration-300 rotate-90 scale-75" />}
+            <Menu className={`h-6 w-6 transition-all duration-300 ${isMenuOpen ? 'rotate-90 scale-0 opacity-0' : 'rotate-0 scale-100 opacity-100'}`} />
+            <X className={`absolute h-6 w-6 transition-all duration-300 ${isMenuOpen ? 'rotate-0 scale-100 opacity-100' : '-rotate-90 scale-0 opacity-0'}`} />
           </Button>
         </div>
       </div>
