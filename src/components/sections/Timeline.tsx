@@ -4,7 +4,7 @@ const timelineData = [
   {
     icon: <GraduationCap />,
     date: '2018',
-    title: 'Started University',
+    title: 'Started at Vision Programming Tech',
     description: 'Began my journey into computer science, laying the foundational knowledge for my future career.',
   },
   {
@@ -22,8 +22,8 @@ const timelineData = [
   {
     icon: <GraduationCap />,
     date: '2023',
-    title: 'Graduated with Honors',
-    description: 'Completed my degree in Computer Science, ready to take on new challenges in the tech industry.',
+    title: 'Graduated from Vision Programming Tech',
+    description: 'Completed my program, ready to take on new challenges in the tech industry.',
   },
 ];
 
