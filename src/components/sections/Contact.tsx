@@ -1,7 +1,6 @@
 'use client';
 
-import { useFormState } from 'react-dom';
-import { useEffect } from 'react';
+import { useActionState, useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { submitContactForm } from '@/app/actions';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -13,7 +12,7 @@ import { SubmitButton } from '@/components/SubmitButton';
 export function Contact() {
   const { toast } = useToast();
   const initialState = { message: null, errors: {} };
-  const [state, dispatch] = useFormState(submitContactForm, initialState);
+  const [state, dispatch] = useActionState(submitContactForm, initialState);
 
   useEffect(() => {
     if (state.message) {
