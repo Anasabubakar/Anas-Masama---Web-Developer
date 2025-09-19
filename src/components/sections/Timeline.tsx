@@ -15,9 +15,9 @@ const timelineData = [
   },
   {
     icon: <Briefcase />,
-    date: 'January 2024 - May 2024',
-    title: 'Software Engineer at Be-Mint 2.0',
-    description: 'Honed my skills as a software engineer, contributing to innovative projects and collaborating with a dynamic team.',
+    date: 'January 2025 - May 2025',
+    title: 'Software Engineer Trainee at Be-Mint 2.0',
+    description: 'Honed my skills as a software engineer trainee, contributing to innovative projects and collaborating with a dynamic team.',
   },
   {
     icon: <Search />,
