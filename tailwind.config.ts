@@ -109,7 +109,7 @@ export default {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'bounce-slow': 'bounce-slow 3s infinite',
+        'bounce-slow': 'bounce-slow 4s infinite',
       },
     },
   },
