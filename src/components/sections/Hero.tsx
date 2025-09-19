@@ -33,7 +33,7 @@ export function Hero() {
               </Button>
           </div>
         </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
             <Link href="#timeline" aria-label="Scroll to next section" className="group">
                 <ArrowDown className="h-8 w-8 text-primary/50 transition-transform duration-300 group-hover:animate-bounce-fast" />
             </Link>
