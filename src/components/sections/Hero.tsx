@@ -21,7 +21,7 @@ export function Hero() {
             <IntroGenerator />
           </div>
         </div>
-        <div className="mt-8 flex justify-center gap-4">
+        <div className="mt-12 flex justify-center gap-4">
             <Button asChild size="lg">
               <Link href="#projects">View My Work</Link>
             </Button>
@@ -29,9 +29,9 @@ export function Hero() {
               <Link href="#contact">Get In Touch</Link>
             </Button>
         </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
             <Link href="#timeline" aria-label="Scroll to next section" className="group">
-                <ArrowDown className="h-8 w-8 text-primary/50 transition-transform duration-300 group-hover:animate-bounce-slow" />
+                <ArrowDown className="h-8 w-8 text-primary/50 transition-transform duration-300 group-hover:animate-bounce-fast" />
             </Link>
         </div>
       </div>
