@@ -2,31 +2,16 @@ export const BootstrapIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
+    viewBox="0 0 256 256"
     fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
   >
     <path
-      d="M2 12C2 7.02944 6.02944 3 11 3H13C17.9706 3 22 7.02944 22 12C22 16.9706 17.9706 21 13 21H11C6.02944 21 2 16.9706 2 12Z"
-      fill="#7952B3"
-      stroke="none"
+      d="M218.47 37.53c-48.47-48.46-129.53-48.46-178 0-48.46 48.47-48.46 129.53 0 178 48.47 48.46 129.53 48.46 178 0 48.46-48.47 48.46-129.53 0-178Z"
+      fill="#7952b3"
     />
     <path
-      d="M8.5 15.5H12.5C13.6046 15.5 14.5 14.6046 14.5 13.5V10.5C14.5 9.39543 13.6046 8.5 12.5 8.5H8.5V15.5Z"
-      stroke="white"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M11.5 12.5H8.5"
-      stroke="white"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      d="M192.4 73.13h-79.34c-11.23 0-20.35 9.1-20.35 20.34v68.05c0 11.23 9.12 20.34 20.35 20.34h79.34c11.23 0 20.35-9.1 20.35-20.34V93.47c0-11.23-9.12-20.34-20.35-20.34Zm-38.1 79.27h-22.1c-4.2 0-7.6-3.4-7.6-7.6v-22.1c0-4.2 3.4-7.6 7.6-7.6h22.1c4.2 0 7.6 3.4 7.6 7.6v22.1c0 4.2-3.4 7.6-7.6 7.6Zm20.98-38.71h-11.4v-11.4h11.4v11.4Zm-20.98-20.98h20.98v20.98h-20.98v-20.98Z"
+      fill="#fff"
     />
   </svg>
 );
