@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap, Star } from 'lucide-react';
+import { Briefcase, GraduationCap, Star, Search } from 'lucide-react';
 
 const timelineData = [
   {
@@ -8,22 +8,22 @@ const timelineData = [
     description: 'Began my journey into computer science, laying the foundational knowledge for my future career.',
   },
   {
-    icon: <Star />,
-    date: '2021',
-    title: 'First Web Project',
-    description: 'Developed my first full-stack web application, sparking a deep passion for web development.',
+    icon: <GraduationCap />,
+    date: 'December 2023',
+    title: 'Graduated from Vision Programming Tech',
+    description: 'Completed my program and immediately began my freelance career, applying my new skills to real-world projects.',
   },
   {
     icon: <Briefcase />,
-    date: '2022',
-    title: 'Software Engineer Intern',
-    description: 'Gained real-world experience working with a team of developers on a large-scale enterprise application.',
+    date: 'January 2024 - May 2024',
+    title: 'Software Engineer at Be-Mint 2.0',
+    description: 'Honed my skills as a software engineer, contributing to innovative projects and collaborating with a dynamic team.',
   },
   {
-    icon: <GraduationCap />,
-    date: '2023',
-    title: 'Graduated from Vision Programming Tech',
-    description: 'Completed my program, ready to take on new challenges in the tech industry.',
+    icon: <Search />,
+    date: 'Present',
+    title: 'Freelancing & Seeking New Opportunities',
+    description: 'Currently working as a freelance developer and actively looking for my next full-time role.',
   },
 ];
 
