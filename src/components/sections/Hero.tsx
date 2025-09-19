@@ -5,7 +5,7 @@ import { ArrowDown } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section id="hero" className="relative w-full py-20 md:py-32 bg-background">
+    <section id="hero" className="relative w-full flex items-center justify-center min-h-[calc(100vh-3.5rem)] py-20 md:py-32 bg-background">
         <div className="absolute inset-0 z-0 opacity-20">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,255,255,0.3),rgba(255,255,255,0))]"></div>
         </div>
@@ -31,7 +31,7 @@ export function Hero() {
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
             <Link href="#timeline" aria-label="Scroll to next section">
-                <ArrowDown className="h-8 w-8 text-primary/50 transition-transform duration-300 hover:scale-125 hover:animate-bounce-slow" />
+                <ArrowDown className="h-8 w-8 text-primary/50 transition-transform duration-300 hover:scale-125 hover:animate-bounce" />
             </Link>
         </div>
       </div>
