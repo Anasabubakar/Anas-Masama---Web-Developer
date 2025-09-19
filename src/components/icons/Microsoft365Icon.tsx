@@ -2,9 +2,11 @@ export const Microsoft365Icon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg 
         {...props}
         xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 24 24" 
-        fill="currentColor"
+        viewBox="0 0 256 256" 
     >
-        <path d="M11 11H3V3h8v8zm2 0V3h8v8h-8zm0 2h8v8h-8v-8zM11 13H3v8h8v-8z"/>
+        <path fill="#F1511B" d="M121.666 121.666H0V0h121.666z"/>
+        <path fill="#80CC28" d="M256 121.666H134.335V0H256z"/>
+        <path fill="#00ADEF" d="M121.663 256.002H0V134.336h121.663z"/>
+        <path fill="#FBBC09" d="M256 256.002H134.335V134.336H256z"/>
     </svg>
 );
