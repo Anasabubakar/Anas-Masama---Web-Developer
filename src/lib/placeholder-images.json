@@ -1,3 +1,35 @@
+
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "A placeholder image for an e-commerce platform project.",
+      "imageUrl": "https://picsum.photos/seed/project1/600/400",
+      "imageHint": "online store"
+    },
+    {
+      "id": "project-2",
+      "description": "A placeholder image for a task management app project.",
+      "imageUrl": "https://picsum.photos/seed/project2/600/400",
+      "imageHint": "task board"
+    },
+    {
+      "id": "project-3",
+      "description": "A placeholder image for a portfolio website project.",
+      "imageUrl": "https://picsum.photos/seed/project3/600/400",
+      "imageHint": "portfolio design"
+    },
+    {
+      "id": "cert-1",
+      "description": "A placeholder for a JavaScript developer certificate.",
+      "imageUrl": "https://picsum.photos/seed/cert1/500/300",
+      "imageHint": "certificate document"
+    },
+    {
+      "id": "cert-2",
+      "description": "A placeholder for a React specialist certificate.",
+      "imageUrl": "https://picsum.photos/seed/cert2/500/300",
+      "imageHint": "award achievement"
+    }
+  ]
 }
