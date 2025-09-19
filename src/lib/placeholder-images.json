@@ -18,12 +18,6 @@
       "description": "A placeholder image for a portfolio website project.",
       "imageUrl": "https://picsum.photos/seed/project3/600/400",
       "imageHint": "portfolio design"
-    },
-    {
-      "id": "cert-coursera-ucdavis",
-      "description": "A placeholder for the Coursera UC Davis Web Development certificate.",
-      "imageUrl": "https://picsum.photos/seed/cert3/500/300",
-      "imageHint": "certificate document"
     }
   ]
 }
