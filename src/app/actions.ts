@@ -25,8 +25,9 @@ export async function submitContactForm(prevState: any, formData: FormData) {
   }
   
   const { name, email, message } = validatedFields.data;
+  const apiKey = process.env.RESEND_API_KEY;
 
-  if (!process.env.RESEND_API_KEY) {
+  if (!apiKey) {
     console.error('Missing required Resend API Key environment variable for email sending.');
     return {
       errors: {},
@@ -34,12 +35,12 @@ export async function submitContactForm(prevState: any, formData: FormData) {
     };
   }
   
-  const resend = new Resend(process.env.RESEND_API_KEY);
+  const resend = new Resend(apiKey);
 
   try {
     await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'amasama8@gmail.com',
+      to: 'anasabubakar7000@gmail.com',
       subject: `New message from ${name} on your portfolio`,
       reply_to: email,
       html: `
