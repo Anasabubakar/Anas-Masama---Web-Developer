@@ -31,7 +31,7 @@ export function Hero() {
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
             <Link href="#timeline" aria-label="Scroll to next section">
-                <ArrowDown className="h-8 w-8 text-primary/50 animate-bounce-slow transition-transform duration-300 hover:scale-125" />
+                <ArrowDown className="h-8 w-8 text-primary/50 transition-transform duration-300 hover:scale-125" />
             </Link>
         </div>
       </div>
