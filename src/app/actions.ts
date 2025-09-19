@@ -26,6 +26,21 @@ export async function submitContactForm(prevState: any, formData: FormData) {
   
   const { name, email, message } = validatedFields.data;
 
+  // Ensure all required environment variables are present
+  if (
+    !process.env.SMTP_HOST ||
+    !process.env.SMTP_PORT ||
+    !process.env.SMTP_USER ||
+    !process.env.SMTP_PASS ||
+    !process.env.RECEIVING_EMAIL_ADDRESS
+  ) {
+    console.error('Missing required environment variables for email sending.');
+    return {
+      errors: {},
+      message: 'The server is not configured to send emails. Please contact the site administrator.',
+    };
+  }
+
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: Number(process.env.SMTP_PORT),
@@ -55,7 +70,7 @@ export async function submitContactForm(prevState: any, formData: FormData) {
     revalidatePath('/');
     return { message: 'Your message has been sent successfully!', errors: {} };
   } catch (e) {
-    console.error(e);
+    console.error('Failed to send email:', e);
     return {
       errors: {},
       message: 'An unexpected error occurred while sending the email. Please try again later.',
