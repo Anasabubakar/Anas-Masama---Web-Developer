@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-lg">
-      <div className="container flex h-12 items-center">
+      <div className="container flex h-14 items-center">
         <Link href="/" className="group mr-auto flex items-center gap-2 font-bold font-headline uppercase tracking-wider">
           <Code className="h-6 w-6 text-primary transition-transform duration-300 group-hover:scale-125" />
           <span className="">Anas Masama</span>
@@ -40,7 +40,7 @@ export function Header() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X className="h-6 w-6 transition-transform duration-300 hover:scale-125" /> : <Menu className="h-6 w-6 transition-transform duration-300 hover:scale-125" />}
+            {isMenuOpen ? <X className="h-6 w-6 transition-transform duration-300 rotate-0 scale-100" /> : <Menu className="h-6 w-6 transition-transform duration-300 rotate-90 scale-75" />}
           </Button>
         </div>
       </div>
