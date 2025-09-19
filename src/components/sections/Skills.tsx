@@ -1,20 +1,22 @@
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { JavascriptIcon } from '../icons/JavascriptIcon';
-import { TypescriptIcon } from '../icons/TypescriptIcon';
 import { ReactIcon } from '../icons/ReactIcon';
-import { NextjsIcon } from '../icons/NextjsIcon';
-import { NodeIcon } from '../icons/NodeIcon';
 import { TailwindIcon } from '../icons/TailwindIcon';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { HtmlIcon } from '../icons/HtmlIcon';
+import { CssIcon } from '../icons/CssIcon';
+import { SqlIcon } from '../icons/SqlIcon';
+import { BootstrapIcon } from '../icons/BootstrapIcon';
 
 const skills = [
+  { name: 'HTML', icon: <HtmlIcon className="h-10 w-10" /> },
+  { name: 'CSS', icon: <CssIcon className="h-10 w-10" /> },
   { name: 'JavaScript', icon: <JavascriptIcon className="h-10 w-10" /> },
-  { name: 'TypeScript', icon: <TypescriptIcon className="h-10 w-10" /> },
-  { name: 'React', icon: <ReactIcon className="h-10 w-10" /> },
-  { name: 'Next.js', icon: <NextjsIcon className="h-10 w-10" /> },
-  { name: 'Node.js', icon: <NodeIcon className="h-10 w-10" /> },
+  { name: 'SQL', icon: <SqlIcon className="h-10 w-10" /> },
   { name: 'Tailwind CSS', icon: <TailwindIcon className="h-10 w-10" /> },
+  { name: 'Bootstrap', icon: <BootstrapIcon className="h-10 w-10" /> },
+  { name: 'React', icon: <ReactIcon className="h-10 w-10" /> },
 ];
 
 export function Skills() {
@@ -27,7 +29,7 @@ export function Skills() {
         </div>
 
         <h3 className="text-2xl font-semibold text-center mb-8">Core Technologies</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-4xl mx-auto mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 max-w-5xl mx-auto mb-20">
           {skills.map((skill) => (
             <div key={skill.name} className="flex flex-col items-center gap-3 p-4 rounded-lg bg-card border transition-transform hover:scale-105 hover:shadow-lg">
               {skill.icon}
