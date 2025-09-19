@@ -28,22 +28,22 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://www.github.com/Anasabubakar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <Github className="h-5 w-5 hover:text-primary transition-colors" />
+                <Github className="h-5 w-5 hover:text-primary transition-all duration-300 hover:scale-125" />
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://www.linkedin.com/in/Anasmasama" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5 hover:text-primary transition-colors" />
+                <Linkedin className="h-5 w-5 hover:text-primary transition-all duration-300 hover:scale-125" />
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://www.twitter.com/Anas_Abubakar70" target="_blank" rel="noopener noreferrer" aria-label="X">
-                <XIcon className="h-5 w-5 hover:text-primary transition-colors" />
+                <XIcon className="h-5 w-5 hover:text-primary transition-all duration-300 hover:scale-125" />
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://wa.me/+2347064294297" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                <WhatsappIcon className="h-6 w-6 hover:text-primary transition-colors" />
+                <WhatsappIcon className="h-6 w-6 hover:text-primary transition-all duration-300 hover:scale-125" />
               </Link>
             </Button>
           </div>

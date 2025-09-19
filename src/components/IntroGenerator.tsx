@@ -67,7 +67,7 @@ export function IntroGenerator() {
         </div>
         <div className="text-center">
           <Button onClick={handleSubmit} disabled={isPending}>
-            {isPending ? <Loader className="mr-2 h-4 w-4 animate-spin" /> : <Sparkles className="mr-2 h-4 w-4" />}
+            {isPending ? <Loader className="mr-2 h-4 w-4 animate-spin" /> : <Sparkles className="mr-2 h-4 w-4 transition-transform duration-300 group-hover:scale-125" />}
             Generate AI Intro
           </Button>
         </div>

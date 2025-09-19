@@ -38,7 +38,7 @@ export function Timeline() {
         <div className="relative max-w-2xl mx-auto">
           <div className="absolute left-1/2 w-0.5 h-full bg-primary/20 -translate-x-1/2"></div>
           {timelineData.map((item, index) => (
-            <div key={index} className="relative flex items-center mb-12">
+            <div key={index} className="relative flex items-center mb-12 group">
               <div className={`flex w-full items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
                   <div className={`p-6 rounded-lg shadow-lg bg-card border-primary/20 border transition-all duration-300 hover:border-primary hover:shadow-[0_0_30px_theme(colors.primary/50)] ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
@@ -49,7 +49,9 @@ export function Timeline() {
                 </div>
               </div>
               <div className="absolute left-1/2 -translate-x-1/2 w-10 h-10 bg-background border-2 border-primary rounded-full flex items-center justify-center text-primary shadow-[0_0_20px_theme(colors.primary/75)] transition-all duration-300 group-hover:scale-110">
-                {item.icon}
+                <div className="transition-transform duration-300 group-hover:scale-125">
+                  {item.icon}
+                </div>
               </div>
             </div>
           ))}
