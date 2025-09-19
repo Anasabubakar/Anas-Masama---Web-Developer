@@ -26,10 +26,7 @@ export async function submitContactForm(prevState: any, formData: FormData) {
   
   const { name, email, message } = validatedFields.data;
 
-  // Ensure all required environment variables are present
   if (
-    !process.env.SMTP_HOST ||
-    !process.env.SMTP_PORT ||
     !process.env.SMTP_USER ||
     !process.env.SMTP_PASS ||
     !process.env.RECEIVING_EMAIL_ADDRESS
@@ -42,9 +39,7 @@ export async function submitContactForm(prevState: any, formData: FormData) {
   }
 
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: Number(process.env.SMTP_PORT),
-    secure: Number(process.env.SMTP_PORT) === 465, // true for 465, false for other ports
+    service: 'gmail',
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
