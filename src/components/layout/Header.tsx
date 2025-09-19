@@ -18,7 +18,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-lg">
       <div className="container flex h-14 items-center">
-        <div className="mr-4 flex items-center">
+        <div className="flex flex-1 items-center justify-start">
           <Link href="/" className="flex items-center gap-2 font-bold font-headline uppercase tracking-wider">
             <Code className="h-6 w-6 text-primary" />
             <span className="">Anas Masama</span>
@@ -35,11 +35,10 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex flex-1 items-center justify-end gap-2">
+        <div className="flex flex-1 items-center justify-end gap-2 md:hidden">
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
