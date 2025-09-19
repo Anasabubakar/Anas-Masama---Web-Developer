@@ -41,14 +41,14 @@ export function Timeline() {
             <div key={index} className="relative flex items-center mb-12">
               <div className={`flex w-full items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
-                  <div className={`p-6 rounded-lg shadow-lg bg-card border-primary/20 border transition-all hover:border-primary hover:shadow-[0_0_20px_theme(colors.primary)] ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
+                  <div className={`p-6 rounded-lg shadow-lg bg-card border-primary/20 border transition-all duration-300 hover:border-primary hover:shadow-[0_0_30px_theme(colors.primary/50)] ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
                     <time className="text-sm font-medium text-primary">{item.date}</time>
                     <h3 className="mt-1 text-xl font-semibold text-foreground">{item.title}</h3>
                     <p className="mt-2 text-muted-foreground">{item.description}</p>
                   </div>
                 </div>
               </div>
-              <div className="absolute left-1/2 -translate-x-1/2 w-10 h-10 bg-background border-2 border-primary rounded-full flex items-center justify-center text-primary shadow-[0_0_15px_theme(colors.primary)]">
+              <div className="absolute left-1/2 -translate-x-1/2 w-10 h-10 bg-background border-2 border-primary rounded-full flex items-center justify-center text-primary shadow-[0_0_20px_theme(colors.primary/75)] transition-all duration-300 group-hover:scale-110">
                 {item.icon}
               </div>
             </div>

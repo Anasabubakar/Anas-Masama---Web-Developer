@@ -31,7 +31,7 @@ export function Skills() {
         <h3 className="text-2xl font-semibold text-center mb-8 font-headline">Core Technologies</h3>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 max-w-5xl mx-auto mb-20">
           {skills.map((skill) => (
-            <div key={skill.name} className="flex flex-col items-center gap-3 p-4 rounded-lg bg-card border border-primary/20 transition-all duration-300 hover:border-primary hover:scale-105 hover:shadow-[0_0_20px_theme(colors.primary)]">
+            <div key={skill.name} className="flex flex-col items-center gap-3 p-4 rounded-lg bg-card border border-primary/20 transition-all duration-300 hover:border-primary hover:scale-105 hover:shadow-[0_0_30px_theme(colors.primary/50)]">
               {skill.icon}
               <p className="font-medium text-center">{skill.name}</p>
             </div>
