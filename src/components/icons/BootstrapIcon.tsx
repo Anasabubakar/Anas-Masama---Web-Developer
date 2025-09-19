@@ -33,8 +33,8 @@ export const BootstrapIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="91.95"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#9013FE" />
-        <stop offset="1" stop-color="#6610F2" />
+        <stop stopColor="#9013FE" />
+        <stop offset="1" stopColor="#6610F2" />
       </linearGradient>
       <linearGradient
         id="deviconBootstrapWordmark1"
@@ -44,8 +44,8 @@ export const BootstrapIcon = (props: React.SVGProps<SVGSVGElement>) => (
         y2="70.922"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#fff" />
-        <stop offset="1" stop-color="#F1E5FC" />
+        <stop stopColor="#fff" />
+        <stop offset="1" stopColor="#F1E5FC" />
       </linearGradient>
       <filter
         id="deviconBootstrapWordmark2"
@@ -53,10 +53,10 @@ export const BootstrapIcon = (props: React.SVGProps<SVGSVGElement>) => (
         height="61.415"
         x="41.143"
         y="22.795"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           result="hardAlpha"
