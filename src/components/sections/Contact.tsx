@@ -32,11 +32,11 @@ export function Contact() {
   }, [state, toast]);
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-secondary/50">
+    <section id="contact" className="py-20 md:py-32 bg-background">
       <div className="container">
-        <Card className="max-w-2xl mx-auto">
+        <Card className="max-w-2xl mx-auto bg-card/50 border-primary/20 shadow-[0_0_30px_theme(colors.primary/20)]">
           <CardHeader>
-            <CardTitle className="text-3xl font-bold font-headline">Get in Touch</CardTitle>
+            <CardTitle className="text-3xl font-bold font-headline uppercase">Get in Touch</CardTitle>
             <CardDescription>
               Have a project in mind or just want to say hi? Fill out the form below.
             </CardDescription>

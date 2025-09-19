@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Roboto', 'sans-serif'],
-        headline: ['Roboto', 'sans-serif'],
+        body: ['"Rajdhani"', 'sans-serif'],
+        headline: ['"Orbitron"', 'sans-serif'],
         code: ['"Source Code Pro"', 'monospace'],
       },
       colors: {

@@ -19,7 +19,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary">
+    <footer className="bg-secondary/20 border-t border-primary/20">
       <div className="container py-8">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-sm text-muted-foreground">
@@ -28,22 +28,22 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://www.github.com/Anasabubakar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <Github className="h-5 w-5" />
+                <Github className="h-5 w-5 hover:text-primary transition-colors" />
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://www.linkedin.com/in/Anasmasama" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="h-5 w-5 hover:text-primary transition-colors" />
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://www.twitter.com/Anas_Abubakar70" target="_blank" rel="noopener noreferrer" aria-label="X">
-                <XIcon className="h-5 w-5" />
+                <XIcon className="h-5 w-5 hover:text-primary transition-colors" />
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://wa.me/+2347064294297" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                <WhatsappIcon className="h-6 w-6" />
+                <WhatsappIcon className="h-6 w-6 hover:text-primary transition-colors" />
               </Link>
             </Button>
           </div>

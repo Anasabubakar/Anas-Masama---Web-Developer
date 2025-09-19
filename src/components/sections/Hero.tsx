@@ -5,10 +5,13 @@ import { ArrowDown } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section id="hero" className="relative w-full py-20 md:py-32 bg-secondary/50">
-      <div className="container text-center">
+    <section id="hero" className="relative w-full py-20 md:py-32 bg-background">
+        <div className="absolute inset-0 z-0 opacity-20">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,255,255,0.3),rgba(255,255,255,0))]"></div>
+        </div>
+      <div className="container text-center relative z-10">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl font-headline">
+          <h1 className="text-4xl font-bold tracking-wider text-foreground sm:text-5xl md:text-6xl font-headline uppercase">
             Anas Masama
           </h1>
           <p className="mt-4 text-lg text-muted-foreground sm:text-xl">
@@ -28,7 +31,7 @@ export function Hero() {
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
             <Link href="#timeline" aria-label="Scroll to next section">
-                <ArrowDown className="h-8 w-8 text-muted-foreground animate-bounce" />
+                <ArrowDown className="h-8 w-8 text-primary/50 animate-bounce" />
             </Link>
         </div>
       </div>

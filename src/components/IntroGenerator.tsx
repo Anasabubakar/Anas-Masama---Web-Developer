@@ -46,7 +46,7 @@ export function IntroGenerator() {
   }, [isPending, introduction]);
 
   return (
-    <Card className="bg-background/70 backdrop-blur">
+    <Card className="bg-background/50 backdrop-blur-sm border-primary/20">
       <CardContent className="p-6">
         <p className="text-center text-muted-foreground mb-4 font-code">
           {displayedIntro}
