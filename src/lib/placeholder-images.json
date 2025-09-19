@@ -20,16 +20,10 @@
       "imageHint": "portfolio design"
     },
     {
-      "id": "cert-1",
-      "description": "A placeholder for a JavaScript developer certificate.",
-      "imageUrl": "https://picsum.photos/seed/cert1/500/300",
+      "id": "cert-coursera-ucdavis",
+      "description": "A placeholder for the Coursera UC Davis Web Development certificate.",
+      "imageUrl": "https://picsum.photos/seed/cert3/500/300",
       "imageHint": "certificate document"
-    },
-    {
-      "id": "cert-2",
-      "description": "A placeholder for a React specialist certificate.",
-      "imageUrl": "https://picsum.photos/seed/cert2/500/300",
-      "imageHint": "award achievement"
     }
   ]
 }

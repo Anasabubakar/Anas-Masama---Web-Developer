@@ -20,16 +20,10 @@ const skills = [
 
 const certificates = [
   {
-    name: 'Certified JavaScript Developer',
-    issuer: 'Tech Certification Inc.',
-    image: PlaceHolderImages.find(p => p.id === 'cert-1'),
-    link: '#',
-  },
-  {
-    name: 'Advanced React Specialist',
-    issuer: 'Web Dev Academy',
-    image: PlaceHolderImages.find(p => p.id === 'cert-2'),
-    link: '#',
+    name: 'Introduction to Web Development',
+    issuer: 'University of California, Davis (via Coursera)',
+    image: PlaceHolderImages.find(p => p.id === 'cert-coursera-ucdavis'),
+    link: 'https://coursera.org/verify/5VFZ2J50PJOT',
   },
 ];
 
