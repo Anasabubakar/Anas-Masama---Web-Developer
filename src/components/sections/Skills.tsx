@@ -8,6 +8,8 @@ import { HtmlIcon } from '../icons/HtmlIcon';
 import { CssIcon } from '../icons/CssIcon';
 import { SqlIcon } from '../icons/SqlIcon';
 import { BootstrapIcon } from '../icons/BootstrapIcon';
+import { SolidEdgeIcon } from '../icons/SolidEdgeIcon';
+import { Microsoft365Icon } from '../icons/Microsoft365Icon';
 
 const skills = [
   { name: 'HTML', icon: <HtmlIcon className="h-10 w-10" /> },
@@ -17,6 +19,8 @@ const skills = [
   { name: 'Tailwind CSS', icon: <TailwindIcon className="h-10 w-10" /> },
   { name: 'Bootstrap', icon: <BootstrapIcon className="h-10 w-10" /> },
   { name: 'React', icon: <ReactIcon className="h-10 w-10" /> },
+  { name: 'Solid Edge', icon: <SolidEdgeIcon className="h-10 w-10" /> },
+  { name: 'Microsoft 365', icon: <Microsoft365Icon className="h-10 w-10" /> },
 ];
 
 export function Skills() {
