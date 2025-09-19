@@ -20,17 +20,17 @@ export function Hero() {
           <div className="mt-8">
             <IntroGenerator />
           </div>
-          <div className="mt-8 flex justify-center gap-4 mb-8">
+        </div>
+        <div className="mt-12 flex justify-center gap-4">
             <Button asChild size="lg">
               <Link href="#projects">View My Work</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link href="#contact">Get In Touch</Link>
             </Button>
-          </div>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-            <Link href="#timeline" aria-label="Scroll to next section">
+            <Link href="#timeline" aria-label="Scroll to next section" className="group">
                 <ArrowDown className="h-8 w-8 text-primary/50 transition-transform duration-500 group-hover:animate-bounce-slow" />
             </Link>
         </div>
