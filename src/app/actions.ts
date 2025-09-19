@@ -27,11 +27,9 @@ export async function submitContactForm(prevState: any, formData: FormData) {
   const { name, email, message } = validatedFields.data;
 
   if (
-    !process.env.RESEND_API_KEY ||
-    !process.env.RESEND_FROM_EMAIL ||
-    !process.env.RESEND_TO_EMAIL
+    !process.env.RESEND_API_KEY
   ) {
-    console.error('Missing required Resend environment variables for email sending.');
+    console.error('Missing required Resend API Key environment variable for email sending.');
     return {
       errors: {},
       message: 'The server is not configured to send emails. Please contact the site administrator.',
@@ -42,8 +40,8 @@ export async function submitContactForm(prevState: any, formData: FormData) {
 
   try {
     await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL,
-      to: process.env.RESEND_TO_EMAIL,
+      from: 'onboarding@resend.dev',
+      to: 'amasama8@gmail.com',
       subject: `New message from ${name} on your portfolio`,
       reply_to: email,
       html: `
