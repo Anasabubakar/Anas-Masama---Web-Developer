@@ -26,9 +26,7 @@ export async function submitContactForm(prevState: any, formData: FormData) {
   
   const { name, email, message } = validatedFields.data;
 
-  if (
-    !process.env.RESEND_API_KEY
-  ) {
+  if (!process.env.RESEND_API_KEY) {
     console.error('Missing required Resend API Key environment variable for email sending.');
     return {
       errors: {},
