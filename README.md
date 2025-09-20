@@ -3,7 +3,7 @@
 This is the source code for my personal portfolio website, designed to showcase my skills, projects, and professional journey as a web developer. It's built with modern technologies including Next.js, TypeScript, and Tailwind CSS, featuring a sleek, responsive design and a touch of AI for a personalized experience.
 
 
-**Live Demo:** [**Anas Masama | Web developer**](https://studio--studio-3251830418-1db49.us-central1.hosted.app/) (Replace with your actual domain when deployed)
+**Live Demo:** [**Anas Masama | Web developer**](https://anasmasama.vercel.app/) (Replace with your actual domain when deployed)
 
 ---
 
