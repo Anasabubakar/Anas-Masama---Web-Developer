@@ -2,9 +2,8 @@
 
 This is the source code for my personal portfolio website, designed to showcase my skills, projects, and professional journey as a web developer. It's built with modern technologies including Next.js, TypeScript, and Tailwind CSS, featuring a sleek, responsive design and a touch of AI for a personalized experience.
 
-[![Deploy with Firebase](https://firebase.google.com/docs/hosting/images/deploy-with-firebase-button.svg)](https://firebase.google.com/docs/hosting/deploy-options)
 
-**Live Demo:** [**anasmasama.com**](https://anasmasama.com) (Replace with your actual domain when deployed)
+**Live Demo:** [**anasmasama.com**](https://anasmasama.com) (Replace with your actual domain when deployed) (Not active)
 
 ---
 
@@ -33,44 +32,9 @@ This project leverages a modern, robust technology stack:
 
 ---
 
-## 🚀 Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
-*   Node.js (v20 or later recommended)
-*   npm or yarn
-
-### Installation
-
-1.  **Clone the repository:**
-    ```sh
-    git clone https://github.com/your_username/your_repository.git
-    ```
-2.  **Navigate to the project directory:**
-    ```sh
-    cd your_repository
-    ```
-3.  **Install NPM packages:**
-    ```sh
-    npm install
-    ```
-4.  **Set up environment variables:**
-    Create a `.env` file in the root of the project and add your Resend API key:
-    ```env
-    RESEND_API_KEY=your_api_key_here
-    ```
-5.  **Run the development server:**
-    ```sh
-    npm run dev
-    ```
-    Open [http://localhost:9002](http://localhost:9002) with your browser to see the result.
-
----
 
 ## ✉️ Contact
 
 Anas Masama – [@Anas_Abubakar70](https://twitter.com/Anas_Abubakar70) – anasabubakar7000@gmail.com
 
-Project Link: [https://github.com/your_username/your_repository](https://github.com/your_username/your_repository)
+Project Link: [https://github.com/your_username/your_repository](https://github.com/Anasabubakar/Anas-Masama---eb-Developer)
