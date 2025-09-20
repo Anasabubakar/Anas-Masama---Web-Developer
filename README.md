@@ -2,9 +2,8 @@
 
 This is the source code for my personal portfolio website, designed to showcase my skills, projects, and professional journey as a web developer. It's built with modern technologies including Next.js, TypeScript, and Tailwind CSS, featuring a sleek, responsive design and a touch of AI for a personalized experience.
 
-[![Deploy with Firebase](https://firebase.google.com/docs/hosting/images/deploy-with-firebase-button.svg)](https://firebase.google.com/docs/hosting/deploy-options)
 
-**Live Demo:** [**anasmasama.com**](https://anasmasama.com) (Replace with your actual domain when deployed)
+**Live Demo:** [**anasmasama.com**](https://anasmasama.com) (Replace with your actual domain when deployed) (Not Active)
 
 ---
 
@@ -73,4 +72,4 @@ To get a local copy up and running, follow these simple steps.
 
 Anas Masama – [@Anas_Abubakar70](https://twitter.com/Anas_Abubakar70) – anasabubakar7000@gmail.com
 
-Project Link: [https://github.com/your_username/your_repository](https://github.com/your_username/your_repository)
+Project Link: [https://github.com/Anasabubakar/Anas-Masama---Web-Developer](https://github.com/your_username/your_repository)
