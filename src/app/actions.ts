@@ -21,6 +21,7 @@ export async function submitContactForm(prevState: any, formData: FormData) {
     return {
       errors: validatedFields.error.flatten().fieldErrors,
       message: 'There were errors with your submission. Please correct them and try again.',
+      success: false,
     };
   }
   
@@ -32,6 +33,7 @@ export async function submitContactForm(prevState: any, formData: FormData) {
     return {
       errors: {},
       message: 'The server is not configured to send emails. Please contact the site administrator.',
+      success: false,
     };
   }
   
@@ -54,12 +56,13 @@ export async function submitContactForm(prevState: any, formData: FormData) {
     });
     
     revalidatePath('/');
-    return { message: 'Your message has been sent successfully!', errors: {} };
+    return { message: 'Your message has been sent successfully!', errors: {}, success: true };
   } catch (e) {
     console.error('Failed to send email with Resend:', e);
     return {
       errors: {},
       message: 'An unexpected error occurred while sending the email. Please try again later.',
+      success: false,
     };
   }
 }

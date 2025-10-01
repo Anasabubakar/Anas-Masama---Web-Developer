@@ -11,12 +11,12 @@ import { SubmitButton } from '@/components/SubmitButton';
 
 export function Contact() {
   const { toast } = useToast();
-  const initialState = { message: null, errors: {} };
+  const initialState = { message: null, errors: {}, success: false };
   const [state, dispatch] = useActionState(submitContactForm, initialState);
 
   useEffect(() => {
     if (state.message) {
-      if (Object.keys(state.errors).length > 0) {
+      if (state.success === false) {
         toast({
           title: 'Error',
           description: state.message,
